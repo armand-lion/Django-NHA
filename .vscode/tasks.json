@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Django Server",
+      "type": "shell",
+      // Dit commando activeert de venv én start direct de server op poort 8080
+      "command": "source .venv/bin/activate && python manage.py runserver 8000 --noreload",
+      "windows": {
+        "command": ".venv\\Scripts\\activate && python manage.py runserver 8000 --noreload"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "runOptions": {
+        // Dit zorgt ervoor dat de taak direct start zodra je de map opent in VS Code
+        "runOn": "folderOpen"
+      },
+      "group": "none"
+    }
+  ]
+}
