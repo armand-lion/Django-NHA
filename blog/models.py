@@ -18,6 +18,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
 class Voetbalspelers(models.Model):
     spelersnaam = models.CharField(max_length=30)
     voetbalclub = models.CharField(max_length=30)
@@ -25,7 +27,12 @@ class Voetbalspelers(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(auto_now=True)
     published_date = models.DateTimeField(blank=True, null=True)
-    
+
+    # Dit zorgt ervoor dat Django 'Voetbalspelers' correct weergeeft in de admin
+    class Meta:
+        verbose_name = "Voetbalspeler"
+        verbose_name_plural = "Voetbalspelers"
+
     def publish(self):
         self.published_date = timezone.now()
         self.save()
