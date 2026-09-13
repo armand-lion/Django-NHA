@@ -122,7 +122,11 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-BASE_DIR / 'blog', 'static',
+STATIC_ROOT = BASE_DIR / "static"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "blog" / "static",
+]
 
 
 # Email
