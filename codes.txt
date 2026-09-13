@@ -1,7 +1,7 @@
 
 # update van de git/github
 git add .
-git commit -m "toevoeging nieuwe database tabel:voetbalspelers"
+git commit -m ""
 git push origin main
 
 ## pythonanwhere update
