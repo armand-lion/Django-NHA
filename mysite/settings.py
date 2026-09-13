@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +26,8 @@ SECRET_KEY = "django-insecure-9vmabn(zu!8zmn)of%(k8cq@^l=0w==a&cbc_9$t)am1%e+%9m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['armandlion.eu.pythonanywhere.com', 'localhost', '127.0.0.1']
+# Aanpassing voor de live webite versie
+ALLOWED_HOSTS = ["armandlion.eu.pythonanywhere.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -118,6 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = "static/"
+
+BASE_DIR / 'blog', 'static',
 
 
 # Email

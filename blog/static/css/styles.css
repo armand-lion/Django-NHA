@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(255, 106, 0);
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+article {
+  width: 500px;
+  margin-bottom: 40px;
+
+}
+
+.header {
+  padding: 70px;
+}
+
+.main {
+  background-color: darkred;
+}
+
+.footer {
+  height: 100px;
+}
+
+.post {
+  border: 2px solid white;
+}
+
+.postblock {
+  background-color: lightpink;
+  width: 500px;
+  margin: 0 20% 0 50%;
+}
+
+.postblock h2 a{
+  color: rgb(255, 106,0);
+}
+

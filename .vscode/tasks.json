@@ -5,9 +5,9 @@
       "label": "Start Django Server",
       "type": "shell",
       // Dit commando activeert de venv én start direct de server op poort 8080
-      "command": "source .venv/bin/activate && python manage.py runserver 8000 --noreload",
+      "command": "source .venv/bin/activate && python manage.py runserver 8000",
       "windows": {
-        "command": ".venv\\Scripts\\activate && python manage.py runserver 8000 --noreload"
+        "command": ".venv\\Scripts\\activate && python manage.py runserver 8000"
       },
       "presentation": {
         "reveal": "always",

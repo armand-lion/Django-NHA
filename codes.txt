@@ -8,22 +8,24 @@ git push origin main
 # 1. Navigeer naar je projectmap
 cd ~/armandlion.eu.pythonanywhere.com
 
-# activeer je virtuele omgeving
+# 2. activeer je virtuele omgeving
 workon armandlion.eu.pythonanywhere.com
 
 # Wis de opgebouwde cache en lokale database-conflicten
 git stash
 
-
+# uiterste nood alleen te gebruiken
 git fetch origin main
 git reset --hard origin/main
 
-# 2. Haal de allernieuwste code (je nieuwe model) op vanaf GitHub
+# 3. Haal de allernieuwste code (je nieuwe model) op vanaf GitHub
 git pull origin main
 
-# 3. Voer de database-migratie live uit op de server
+# 4. Voer de database-migratie live uit op de server
 python manage.py makemigrations
 python manage.py migrate
+
+
 
 ## pythoneanywhere server helemaal leeg maken en nieuw opzetten
 pa_autoconfigure_django.py --nuke --python=3.11 https://github.com/armand-lion/Django-NHA
