@@ -1,0 +1,30 @@
+li a {
+  color: white;
+  font-size: 20px;
+}
+
+li a:hover {
+  color: pink;
+  font-size: 20px;
+}
+
+body {
+  background: white url('images/background.gif') no-repeat;
+}
+
+
+ul {
+  background-color: rgba(0, 0, 0, 0.6); /* Zwart met 60% zichtbaarheid */
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block; /* Zorgt dat het vlak netjes om de tekst heen sluit */
+  list-style-type: none; /* 1. DIT VERWIJDERT DE STANDAARD BULLET */
+}
+
+/* 2. DIT ZORGT VOOR HET MOOIE PIJLTJE MET EEN BEETJE RUIMTE */
+ul li::before {
+  content: '→ '; /* Een echt pijltje (of '-> ') met een spatie erachter */
+  color: white;
+  font-size: 20px;
+  margin-right: 8px; /* Geeft wat ademruimte tussen het pijltje en de tekst */
+}

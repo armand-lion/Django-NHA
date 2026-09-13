@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% block inhoud %}
+    <div class="main pt-4 pb-4">
+        <div class="postblock">
+            <article class="post">
+                {% if post.published_date %}
+                    <time class="date d-block mb-2">
+                        {{ post.published_date|date:"j F Y H:i" }}
+                    </time>
+                {% endif %}
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <a href="{% url 'delete' post.id %}" class="btn btn-danger mt-3">Verwijder</a>
+            </article>
+            </div>
+    </div>
+{% endblock %}

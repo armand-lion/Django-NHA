@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-9vmabn(zu!8zmn)of%(k8cq@^l=0w==a&cbc_9$t)am1%e+%9m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Aanpassing voor de live webite versie
+# Aanpassing voor de live website versie
 ALLOWED_HOSTS = ["armandlion.eu.pythonanywhere.com", "localhost", "127.0.0.1"]
 
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # NHA cursus
     "blog",
+    "polls",
 ]
 
 MIDDLEWARE = [

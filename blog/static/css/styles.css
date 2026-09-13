@@ -12,9 +12,11 @@ h1 {
 article {
   width: 500px;
   margin-bottom: 40px;
-
 }
 
+a {
+  color: black;
+}
 .header {
   padding: 70px;
 }
@@ -29,6 +31,7 @@ article {
 
 .post {
   border: 2px solid white;
+  padding: 15px;
 }
 
 .postblock {
@@ -37,7 +40,41 @@ article {
   margin: 0 20% 0 50%;
 }
 
-.postblock h2 a{
-  color: rgb(255, 106,0);
+.postblock h2 {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.post-form {
+  padding: 10px;
+  margin: 20px;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+/* Zorgt dat het label bovenaan de textarea begint */
+.post-form p label {
+  vertical-align: top;
+  display: inline-block;
+  width: 60px; /* Geeft de labels een vaste breedte zodat de velden mooi uitlijnen */
+  font-weight: 600;
+}
+
+/* Geeft de invoervelden een strakke Bootstrap-look en breedte */
+.post-form input[type='text'],
+.post-form textarea {
+  display: inline-block;
+  width: 380px; /* Past precies binnen je postblock van 500px */
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box; /* Zorgt dat padding de velden niet te breed maakt */
+}
+
+/* Geeft wat extra ademruimte tussen de formulierregels */
+.post-form p {
+  margin-bottom: 15px;
 }
 
